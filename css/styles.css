@@ -81,6 +81,7 @@ body {
   line-height: 28px;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -105,9 +106,28 @@ img {
 }
 
 *:focus {
-outline: 2px dashed var(--black);
+  outline: 2px dashed var(--black);
 }
 
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
 
 /* VISUALLY-HIDDEN  */
 .visually-hidden {
@@ -169,12 +189,14 @@ outline: 2px dashed var(--black);
 }
 
 .button--big-light {
-  background-color: var(--gray);
+  background-color: #f7f7f7;
   color: rgba(36, 42, 69, 0.75);
+  margin-left: 16px;
 }
 
 .button--big-light:hover {
   border-color: rgba(36, 42, 69, 0.75);
+  color: rgba(36, 42, 69, 0.75);
 }
 
 .button--blue {
@@ -210,6 +232,7 @@ outline: 2px dashed var(--black);
 
 .logo {
   display: flex;
+  flex-shrink: 0;
 }
 
 .logo:hover {
@@ -221,7 +244,6 @@ outline: 2px dashed var(--black);
 }
 
 .logo__img {
-  flex-shrink: 0;
   width: 149px;
   height: 25px;
   object-fit: cover;
@@ -231,6 +253,7 @@ outline: 2px dashed var(--black);
   display: flex;
   align-items: center;
   margin-left: auto;
+  padding-left: 30px;
 }
 
 .sitenav__list {
@@ -262,4 +285,56 @@ outline: 2px dashed var(--black);
 
 .sitenav__link:active {
   opacity: 0.6;
+}
+
+
+/* HERO  */
+.hero {
+  padding-top: 132px;
+  padding-bottom: 150px;
+  background-image: url(../img/bg.svg);
+  background-position: calc(50% + 695px) 192px;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: var(--black);
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 500;
+  letter-spacing: -0.15px;
+}
+
+.hero__description {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.hero__button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hero__img {
+  position: absolute;
+  right: -41px;
+  top: -71px;
+  min-width: 578px;
+  height: 385px;
+  box-shadow: 0px 2px 4px 0px #00000080;
+  border-radius: 27px;
 }
