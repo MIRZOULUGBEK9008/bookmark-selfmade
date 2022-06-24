@@ -146,6 +146,7 @@ img {
 .button {
   display: inline-block;
   padding: 0;
+  text-decoration: none;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -201,6 +202,8 @@ img {
 
 .button--blue {
   text-transform: capitalize;
+  background-color: var(--blue);
+  padding: 10px 24px;
 }
 
 .button--blue:hover {
@@ -337,4 +340,110 @@ img {
   height: 385px;
   box-shadow: 0px 2px 4px 0px #00000080;
   border-radius: 27px;
+}
+
+
+/* INDEX-FEATURES  */
+.index-features {
+  padding-top: 53px;
+  padding-bottom: 119px;
+  background-image: url(../img/bg.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 583px) calc(75% + 43px);
+}
+
+.index-features__content {
+  max-width: 540px;
+  text-align: center;
+  margin-bottom: 63px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index-features__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: var(--black);
+  font-size: 32px;
+  line-height: 52px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+}
+
+.index-features__description {
+  margin: 0;
+}
+
+.index-features__list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.line-slider {
+  display: inline-block;
+  position: absolute;
+  left: 188px;
+  bottom: 1px;
+  height: 3px;
+  width: 243px;
+  background-color: var(--red);
+  transition: width 0.5s ease,
+  left 0.5s ease;
+}
+
+.index-features__feature-name {
+  width: 243px;
+  padding-bottom: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: rgba(36, 42, 69, 0.75);
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  border-bottom: 1px solid  rgba(73, 93, 207, 0.2);
+}
+
+.index-features__item--active .index-features__feature-name {
+  color: var(--black);
+}
+
+.tab-wrapper {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.tab__inner {
+  display: flex;
+  align-items: center;
+}
+.tab__img {
+  width: 536px;
+  height: 346px;
+  object-fit: cover;
+  margin-right: 125px;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tab-content__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  letter-spacing: -0.1px;
+}
+
+.tab-content__description {
+  margin: 0;
+  margin-bottom: 31px;
 }
