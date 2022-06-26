@@ -8,17 +8,10 @@ const elArrow = document.querySelectorAll('.js-arrow');
 
 
 // Drop/Down FAQ
-elQuestionButton.forEach(function (elButton) {
-  elButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-
-    elArrow.forEach(function (elArrow) {
-      elArrow.classList.toggle('arrow--open');
-    });
-
-    elAnswer.forEach(function (elAnswer) {
-      elAnswer.classList.toggle('faq__questions-answer--open');
-    });
+elQuestionButton.forEach(function (elButton, index) {
+  elButton.addEventListener('click', function () {
+    elArrow[index].classList.toggle('arrow--open');
+    elAnswer[index].classList.toggle('faq__questions-answer--open');
   });
 });
 
