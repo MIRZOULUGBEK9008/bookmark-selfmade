@@ -3,19 +3,24 @@ const elsSitenavLink = document.querySelectorAll('.index-features__feature-name'
 
 // Drop/Down FAQ
 const elQuestionButton = document.querySelectorAll('.js-faq__questions-button');
-const elAnswer = document.querySelectorAll('js-faq__questions-answer');
-const elArrow = document.querySelectorAll('.js-arrow')
+const elAnswer = document.querySelectorAll('.js-faq__questions-answer');
+const elArrow = document.querySelectorAll('.js-arrow');
+
 
 // Drop/Down FAQ
 elQuestionButton.forEach(function (elButton) {
   elButton.addEventListener('click', function (evt) {
-    console.log('Ishladi');
-    // elArrow.classList.toggle('arrow--open');
-    // elAnswer.classList.toggle('faq__questions-answer--open');
+    evt.preventDefault();
+
+    elArrow.forEach(function (elArrow) {
+      elArrow.classList.toggle('arrow--open');
+    });
+
+    elAnswer.forEach(function (elAnswer) {
+      elAnswer.classList.toggle('faq__questions-answer--open');
+    });
   });
-
 });
-
 
 elsSitenavLink.forEach(function (elLink) {
   elLink.addEventListener('click', function (evt) {

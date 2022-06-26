@@ -639,6 +639,14 @@ img {
   color: var(--red);
 }
 
+.faq__questions-answer {
+  display: none;
+}
+
+.faq__questions-answer--open {
+  display: block;
+}
+
 .arrow {
   margin-right: 24px;
   color: var(--blue);
@@ -648,12 +656,4 @@ img {
 .arrow--open {
   color: var(--red);
   transform: rotate(180deg);
-}
-
-.faq__questions-answer {
-  display: none;
-}
-
-.faq__questions-answer--open {
-  display: block;
 }
