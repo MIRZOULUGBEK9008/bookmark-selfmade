@@ -1,5 +1,5 @@
-const elsSitenavItem = document.querySelectorAll('.index-features__item');
-const elsSitenavLink = document.querySelectorAll('.index-features__feature-name');
+// const elsSitenavItem = document.querySelectorAll('.index-features__item');
+// const elsSitenavLink = document.querySelectorAll('.index-features__feature-name');
 
 // Drop/Down FAQ
 const elQuestionButton = document.querySelectorAll('.js-faq__questions-button');
@@ -19,31 +19,31 @@ elQuestionButton.forEach(function (elButton, index) {
   });
 });
 
-elsSitenavLink.forEach(function (elLink) {
-  elLink.addEventListener('click', function (evt) {
-    evt.preventDefault();
+// elsSitenavLink.forEach(function (elLink) {
+//   elLink.addEventListener('click', function (evt) {
+//     evt.preventDefault();
 
-    elsSitenavItem.forEach(function (elItem) {
-      elItem.classList.remove('index-features__item--active');
-    });
+//     elsSitenavItem.forEach(function (elItem) {
+//       elItem.classList.remove('tabs__item--active');
+//     });
 
-    elLink.parentElement.classList.add('index-features__item--active');
+//     elLink.parentElement.classList.add('tabs__item--active');
 
-    updateSitenavActiveLineStyles();
+//     updateSitenavActiveLineStyles();
 
-  });
-});
+//   });
+// });
 
-// Chiziqchani topamiz
-const elSitenavActiveLine = document.querySelector('.line-slider');
+// // Chiziqchani topamiz
+// const elSitenavActiveLine = document.querySelector('.line-slider');
 
-function updateSitenavActiveLineStyles () {
-  // Faol elementni top
-  const elSitenavItemActive = document.querySelector('.index-features__item--active');
+// function updateSitenavActiveLineStyles () {
+//   // Faol elementni top
+//   const elSitenavItemActive = document.querySelector('.tabs__item--active');
 
-  // Chiziqchaning chap tomonini faol element chap tomoniga tengla
-  elSitenavActiveLine.style.left = elSitenavItemActive.offsetLeft + 'px';
+//   // Chiziqchaning chap tomonini faol element chap tomoniga tengla
+//   elSitenavActiveLine.style.left = elSitenavItemActive.offsetLeft + 'px';
 
-  // Chiziqchaning enini faol element eniga tengla
-  elSitenavActiveLine.style.width = elSitenavItemActive.offsetWidth + 'px';
-}
+//   // Chiziqchaning enini faol element eniga tengla
+//   elSitenavActiveLine.style.width = elSitenavItemActive.offsetWidth + 'px';
+// }
