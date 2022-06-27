@@ -633,6 +633,12 @@ img {
   padding-top: 19px;
   padding-bottom: 19px;
   border-top: 1px solid rgba(36, 42, 69, 0.15);
+  transition: height 0.4s ease;
+  height: 79px;
+}
+
+.faq__questions-item--open {
+  height: 294px;
 }
 
 .faq__questions-item:last-child {
@@ -681,7 +687,7 @@ img {
 .arrow {
   margin-right: 24px;
   color: var(--blue);
-  transition: transform 0.3s ease,
+  transition: transform 0.4s ease,
   color 0.3s ease;
 }
 

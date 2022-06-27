@@ -5,13 +5,17 @@ const elsSitenavLink = document.querySelectorAll('.index-features__feature-name'
 const elQuestionButton = document.querySelectorAll('.js-faq__questions-button');
 const elAnswer = document.querySelectorAll('.js-faq__questions-answer');
 const elArrow = document.querySelectorAll('.js-arrow');
+const elItem = document.querySelectorAll('.js-faq__questions-item');
 
 
 // Drop/Down FAQ
 elQuestionButton.forEach(function (elButton, index) {
   elButton.addEventListener('click', function () {
     elArrow[index].classList.toggle('arrow--open');
-    elAnswer[index].classList.toggle('faq__questions-answer--open');
+    elItem[index].classList.toggle('faq__questions-item--open');
+    setTimeout(function () {
+      elAnswer[index].classList.toggle('faq__questions-answer--open');
+    }, 100);
   });
 });
 
