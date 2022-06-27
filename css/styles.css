@@ -461,45 +461,53 @@ img {
   outline: none;
 }
 
-.tab-wrapper {
+.tab-panels {
   padding-top: 72px;
   padding-bottom: 72px;
 }
 
-.tab__inner {
+.tab-panels__tab-panel {
+  display: none;
+}
+
+.tab-panels__tab-panel--active {
+  display: block;
+}
+
+.tab-panels__tab-panel-inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.tab__img {
+.tab-panels__tab-panel-img {
+  object-fit: contain;
+  margin-right: 30px;
+}
+
+.tab-panels__tab-panel-img-simple-bookmarking {
   width: 536px;
   height: 346px;
-  object-fit: cover;
-  margin-right: 125px;
 }
 
-.tab__img-speedy-searching {
+.tab-panels__tab-panel-img-speedy-searching {
   width: 468px;
   height: 393px;
-  object-fit: cover;
-  margin-right: 118px;
 }
 
-.tab__img-easy-sharing {
+.tab-panels__tab-panel-img-easy-sharing {
   width: 440px;
   height: 380px;
-  object-fit: cover;
-  margin-right: 146px;
 }
 
-.tab-content {
+.tab-panels__tab-panel-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: 445px;
 }
 
-.tab-content__title {
+.tab-panels__tab-panel-content-title {
   margin-top: 0;
   margin-bottom: 16px;
   color: var(--black);
@@ -509,7 +517,7 @@ img {
   letter-spacing: -0.1px;
 }
 
-.tab-content__description {
+.tab-panels__tab-panel-content-description {
   margin: 0;
   margin-bottom: 31px;
 }
