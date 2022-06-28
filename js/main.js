@@ -12,10 +12,8 @@ const elItem = document.querySelectorAll('.js-faq__questions-item');
 elQuestionButton.forEach(function (elButton, index) {
   elButton.addEventListener('click', function () {
     elArrow[index].classList.toggle('arrow--open');
-    elItem[index].classList.toggle('faq__questions-item--open');
-    setTimeout(function () {
-      elAnswer[index].classList.toggle('faq__questions-answer--open');
-    }, 100);
+    elAnswer[index].classList.toggle('faq__questions-answer--open');
+
   });
 });
 
