@@ -458,6 +458,8 @@ img {
 
 .tabs__link:focus {
   outline: none;
+  color: var(--black);
+  border-color: var(--red);
 }
 
 .tab-panels {
@@ -643,6 +645,10 @@ img {
   cursor: pointer;
 }
 
+.faq__questions-button:focus .faq__questions-button-inner .faq__questions-text {
+  color: var(--red);
+}
+
 .faq__questions-button:focus {
   outline: none;
 }
@@ -690,6 +696,10 @@ img {
 /* CTA */
 .cta {
   background-color: var(--blue);
+}
+
+.cta *:focus {
+  outline-color: white;
 }
 
 .cta__container {
@@ -784,6 +794,10 @@ img {
   background-color: var(--black);
 }
 
+.site-footer *:focus {
+  outline-color: white;
+}
+
 .site-footer__container {
   display: flex;
   align-items: center;
@@ -812,6 +826,7 @@ img {
 }
 
 .site-footer__social-link {
+  display: flex;
   color: white;
   transition: color 0.3s ease,
   opacity 0.3s ease;
