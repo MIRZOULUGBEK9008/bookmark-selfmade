@@ -532,6 +532,7 @@ img {
 
 .extension__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none  ;
@@ -541,11 +542,11 @@ img {
   margin-right: 34px;
 }
 
-.extension__item:nth-child(2) {
+.extension__item:nth-child(3n+2) {
   margin-top: 40px;
 }
 
-.extension__item:nth-child(3) {
+.extension__item:nth-child(3n) {
   margin-top: 80px;
 }
 
