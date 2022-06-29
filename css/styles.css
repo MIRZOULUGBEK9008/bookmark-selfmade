@@ -398,24 +398,12 @@ img {
   padding-bottom: 100px;
   background-image: url(../img/bg.svg);
   background-repeat: no-repeat;
-  background-position: calc(50% - 583px) calc(75% + 65px);
+  background-position: calc(50% - 583px) calc(50% + 193px);
 }
 
 .index-features__content {
   margin-bottom: 44px;
 }
-
-/* .line-slider {
-  display: inline-block;
-  position: absolute;
-  left: 188px;
-  bottom: -27px;
-  height: 3px;
-  width: 243px;
-  background-color: var(--red);
-  transition: width 0.5s ease,
-  left 0.5s ease;
-} */
 
 .tabs__list {
   position: relative;
@@ -478,32 +466,35 @@ img {
 .tab-panels__tab-panel-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .tab-panels__tab-panel-img {
   object-fit: contain;
-  margin-right: 30px;
 }
 
 .tab-panels__tab-panel-img-simple-bookmarking {
   width: 536px;
   height: 346px;
+  margin-right: 125px;
 }
 
 .tab-panels__tab-panel-img-speedy-searching {
   width: 468px;
   height: 393px;
+  margin-right: 118px;
 }
 
 .tab-panels__tab-panel-img-easy-sharing {
   width: 440px;
   height: 380px;
+  margin-right: 145px;
 }
 
 .tab-panels__tab-panel-content {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   align-items: flex-start;
   max-width: 445px;
 }
