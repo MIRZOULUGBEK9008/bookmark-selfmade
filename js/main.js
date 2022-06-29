@@ -1,13 +1,12 @@
 // Drop/Down FAQ
-const elsQuestionButton = document.querySelectorAll('.js-faq__questions-button');
-const elsAnswer = document.querySelectorAll('.js-faq__questions-answer');
-const elsArrow = document.querySelectorAll('.js-arrow');
+const elsAccordionToggler = document.querySelectorAll('.js-accordion-toggler');
+const elsAccordionContent = document.querySelectorAll('.js-accordion-content');
 
 // Drop/Down FAQ
-elsQuestionButton.forEach(function (elButton, index) {
-  elButton.addEventListener('click', function () {
-    elsArrow[index].classList.toggle('arrow--open');
-    elsAnswer[index].classList.toggle('faq__questions-answer--open');
+elsAccordionToggler.forEach(function (elToggler, index) {
+  elToggler.addEventListener('click', function () {
+    elsAccordionToggler[index].classList.toggle('accordion__button--open');
+    elsAccordionContent[index].classList.toggle('accordion__content--open');
   });
 });
 
