@@ -811,6 +811,7 @@ img {
   z-index: 15;
   min-width: 300px;
   padding: 12px 20px;
+  padding-right: 52px;
   border: none;
   border-radius: 5px;
   border: 2px solid transparent;
@@ -826,6 +827,9 @@ img {
 /* VALID-INVALID  */
 .cta__form-input:not(:focus):not(:placeholder-shown):invalid {
   border-color: var(--red);
+  background-image: url(../img/error-disc.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
 }
 
 .cta__form-input:not(:focus):not(:placeholder-shown):invalid + .cta__form-input-errormsg {
