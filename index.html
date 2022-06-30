@@ -100,7 +100,7 @@
                 <img class="tab-panels__tab-panel-img tab-panels__tab-panel-img-simple-bookmarking" src="./img/slide/simple-bokmarking.svg" alt="Tablet" width="536" height="346">
                 <div class="tab-panels__tab-panel-content">
                   <h2 class="tab-panels__tab-panel-content-title">Bookmark in one click</h2>
-                  <p class="tab-panels__tab-content-panel-description">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                  <p class="tab-panels__tab-panel-content-description">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
                   <a class="button button--blue" href="#">More info</a>
                 </div>
               </div>
@@ -261,10 +261,10 @@
                     <form class="cta__form" action="https://echo.htmlacademy.ru" method="GET" target="_blank">
 
                       <div class="cta__form-inner">
-                        <input type="email" class="cta__form-input" placeholder="Enter your email address" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}
-                        [a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
-                        " required>
-                        <!-- <span class="validation-error">Whoops, make sure it’s an email</span> -->
+                        <div class="cta__form-input-wrapper">
+                          <input class="cta__form-input"  type="email" placeholder="Enter your email address" name="email" required>
+                          <span class="cta__form-input-errormsg">Whoops, make sure it’s an email</span>
+                        </div>
                         <div>
                           <button class="button button--red button--red-contact-us" type="submit">Contact Us</button>
                         </div>

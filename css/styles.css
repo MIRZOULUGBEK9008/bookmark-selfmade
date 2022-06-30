@@ -185,7 +185,7 @@ img {
 
 .button--big {
   background-color: var(--blue);
-  padding: 8px 22px;
+  padding: 8px 24px;
   line-height: 28px;
 }
 
@@ -343,10 +343,10 @@ img {
 
 /* HERO  */
 .hero {
-  padding-top: 65px;
+  padding-top: 61px;
   padding-bottom: 124px;
   background-image: url(../img/bg.svg);
-  background-position: calc(50% + 695px) 192px;
+  background-position: calc(50% + 698px) 195px;
   background-repeat: no-repeat;
 }
 
@@ -362,6 +362,7 @@ img {
   min-width: 540px;
   padding-top: 70px;
   margin-right: 65px;
+  margin-left: -8px;
 }
 
 .hero__title {
@@ -394,7 +395,7 @@ img {
 
 /* INDEX-FEATURES  */
 .index-features {
-  padding-top: 53px;
+  padding-top: 57px;
   padding-bottom: 100px;
   background-image: url(../img/bg.svg);
   background-repeat: no-repeat;
@@ -402,7 +403,7 @@ img {
 }
 
 .index-features__content {
-  margin-bottom: 44px;
+  margin-bottom: 40px;
 }
 
 .tabs__list {
@@ -451,7 +452,7 @@ img {
 }
 
 .tab-panels {
-  padding-top: 72px;
+  padding-top: 68px;
   padding-bottom: 72px;
 }
 
@@ -517,7 +518,7 @@ img {
 
 /* EXTENSIONS  */
 .extension {
-  padding-top: 70px;
+  padding-top: 65px;
   padding-bottom: 75px;
 }
 
@@ -744,31 +745,47 @@ img {
   display: flex;
 }
 
-/* .cta__form-input-wrapper {
+.cta__form-input-wrapper {
+  position: relative;
   display: flex;
+  width: 300px;
+  height: 100%;
   flex-direction: column;
-  min-width: 300px;
-} */
+  margin-right: 16px;
+}
 
 .cta__form-input {
+  z-index: 15;
   min-width: 300px;
-  margin-right: 16px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border: none;
   border-radius: 5px;
   border: 2px solid transparent;
 }
 
+.cta__form-input::placeholder {
+  color: rgba(36, 42, 69, 0.2501);
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
+
 /* VALID-INVALID  */
-.cta__form-input:not(:focus):not(:placeholder-shown):valid {
-  border-color: transparent;
-}
-
 .cta__form-input:not(:focus):not(:placeholder-shown):invalid {
-  border-color: #fa5959;;
+  border-color: var(--red);
 }
 
-/* .validation-error {
+.cta__form-input:not(:focus):not(:placeholder-shown):invalid + .cta__form-input-errormsg {
+  display: block;
+}
+
+.cta__form-input-errormsg {
+  display: none;
+  position: absolute;
+  top: calc(100% - 5px);
+  z-index: 10;
+  width: 100%;
+  padding: 6px 12px 4px;
   font-style: italic;
   color: white;
   font-size: 10px;
@@ -776,19 +793,7 @@ img {
   font-weight: 500;
   letter-spacing: 0.25px;
   background-color: #fa5959;
-} */
-
-/* .cta__form-input:focus + .validation-error,
-.cta__form-input:valid + .validation-error,
-.cta__form-input:(:placeholder-shown) + .validation-error {
-  display: none;
-} */
-
-.cta__form-input::placeholder {
-  color: rgba(36, 42, 69, 0.2501);
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 
